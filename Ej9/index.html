@@ -1,0 +1,26 @@
+<!--9) Haya un recuadro y un botón que permita crear una caja dentro de ese recuadro hasta cinco veces máximo.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ejercicio 9</title>
+</head>
+<body>
+    <div id="recuadro"></div>
+    <button onclick="addCuadrado()">Añadir Cuadrado</button>
+</body>
+<script>
+    function addCuadrado(){
+        const recuadro = document.getElementById("recuadro");
+
+        if(recuadro.childElementCount < 5){
+            const caja = document.createElement("div");
+            caja.classList.add("caja");
+            recuadro.appendChild(caja);
+        }
+        
+    }
+</script>
+</html>

@@ -1,0 +1,23 @@
+<!--5) Haya texto y un mismo botón que haga alternar el texto entre subrayado y no subrayado.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5</title>
+</head>
+<body>
+    <h1 id="nombre">Jairo Alexandro</h1>
+    <button onclick="subrayar()">Subrayar</button>
+</body>
+<script>
+    function subrayar(){
+        const textContent = document.getElementById("nombre");
+        if(textContent.style.textDecoration === "none"){
+            textContent.style.textDecoration = "underline";
+        }else{
+            textContent.style.textDecoration = "none";
+        }
+    }
+</script>
+</html>

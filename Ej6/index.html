@@ -1,0 +1,23 @@
+<!--6) Haya texto y un mismo botón que permita alternar el texto entre oculto y no oculto.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6</title>
+</head>
+<body>
+    <h1 id="nombre">Jairo Alexandro</h1>
+    <button onclick="esconder()">Ocultar</button>
+</body>
+<script>
+    function esconder(){
+        const textContent = document.getElementById("nombre");
+        if(textContent.style.display === "none"){
+            textContent.style.display = "block";
+        }else{
+            textContent.style.display = "none";
+        }
+    }
+</script>
+</html>
