@@ -1,0 +1,23 @@
+<!--8) Haya un recuadro y un botón que permita crear una caja dentro de ese recuadro tantas veces como se quiera.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ejercicio 8</title>
+</head>
+<body>
+    <div id="recuadro"></div>
+    <button onclick="addCuadrado()">Añadir cuadrado</button>
+</body>
+<script>
+    function addCuadrado(){
+        const recuadro = document.getElementById("recuadro");
+
+        const cajas = document.createElement("div");
+        cajas.classList.add("caja");
+        recuadro.appendChild(cajas);
+    }
+</script>
+</html>

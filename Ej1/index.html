@@ -1,0 +1,19 @@
+<!--1) Haya texto y un botón que permita modificar ese texto.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+    <h1 id = "title">Este es mi primer ejercicio</h1>
+    <button onclick="changeText()">Cambiar texto</button>
+</body>
+<script>
+    function changeText(){
+        const contenidoTexto = document.getElementById("title");
+        contenidoTexto.textContent = "¡Acabo de cambiar el texto eh!";
+    }
+</script>
+</html>
